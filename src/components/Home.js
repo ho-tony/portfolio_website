@@ -5,41 +5,29 @@ import "../input.css";
 
 function Home() {
   return (
-    <div class="h-screen flex-col bg-gray-900">
-      <div class="header flex mb-4">
-        <button class="w-1/3 bg-gray-800 hover:bg-gray-700 h-10 font-sans text-xl sm:text-2xl text-white text-center tracking-[.15em] sm:tracking-[.20em] font-bold">
-          {/* <Link to="/">Home</Link> */}
-          Home
-        </button>
-        <button class="w-1/3 bg-gray-800 hover:bg-gray-700 h-10 font-sans text-xl sm:text-2xl text-white text-center tracking-[.15em] sm:tracking-[.20em] font-bold">
-          {/* <Link to="/resume">Resume</Link> */}
-          Resume
-        </button>
-        <button class="w-1/3 bg-gray-800 hover:bg-gray-700 h-10 font-sans text-xl sm:text-2xl text-white text-center tracking-[.15em] sm:tracking-[.20em] font-bold">
-          {/* <Link to="/projects">Projects</Link> */}
-          Projects
-        </button>
-      </div>
-      <div class="flex flex-col items-center justify-center h-5/6">
-        <p class="text-4xl text-white font-sans tracking-[.5em] select-none font-extrabold">
+    <div class="flex h-screen flex-col bg-gray-900">
+      <Header />
+      <div class="grid place-content-center flex-grow">
+        <p class="text-center text-4xl text-white font-sans tracking-[.5em] select-none font-extrabold">
           Tony Ho
         </p>
-        <p class="my-8 text-2xl text-yellow-500 font-sans tracking-[0.25em] select-none text-center">
+        <p class="my-8 text-center text-2xl text-yellow-500 font-sans tracking-[0.25em] select-none">
           Full Stack Software Engineer
         </p>
+        <svg
+            class="w-6 h-6 text-blue-500 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+          </svg>
       </div>
-      <footer class="flex items-center justify-center h-16 bg-gray-800">
+      <footer class="flex items-center justify-center bottom-0 h-13 bg-gray-800">
         <p class="text-sm text-white font-sans tracking-wide select-none text-center justify-center items-center">
           made using <a class="text-cyan-400">react.js</a> and{" "}
           <a class="text-sky-600">tailwind</a>
         </p>
       </footer>
-      {/* <Routes>
-          <Routes path="/"
-          </Routes
-          <Route path="/resume"></Route>
-          <Route path="/projects"></Route>
-        </Routes> */}
     </div>
   );
 }
