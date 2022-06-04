@@ -2,32 +2,28 @@ import React from "react";
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
 import IconBar from "./IconBar";
+import Footer from "./Footer";
 import "../input.css";
 
 function Home() {
   return (
-    <div class="flex h-screen flex-col bg-gray-900">
+    <div class="flex h-screen flex-col bg-[#333745]">
       <Header />
-      <div class="grid place-content-center flex-grow">
-        <p class="text-center text-4xl text-white font-sans tracking-[.5em] select-none font-extrabold">
+      <div class="grid place-content-center flex-grow place-items-center">
+     
+        <p class="text-center text-4xl text-[#FFFDF7] font-sans-serif tracking-[.5em] select-none font-bold my-10">
           Tony Ho
         </p>
-        <p class="my-8 text-center text-2xl text-yellow-500 font-sans tracking-[0.25em] select-none">
+
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHJznxACTfnOw/profile-displayphoto-shrink_200_200/0/1647018597257?e=1659571200&v=beta&t=ZbbSnNadfLbGVvHewVRspkoTakFKeF0bOqzDyLIYqPI" class="rounded-full" alt=""/>
+
+
+        <p class="my-8 text-center text-2xl text-[#FFFDF7] font-sans-serif font-bold tracking-[0.25em] select-none">
           Full Stack Software Engineer
         </p>
-        <div class="container max-w-screen-lg mx-auto">
-          <div class="flex flex-wrap justify-center gap-2">
-            <IconBar />
-          </div>
-        </div>
+        <IconBar />
       </div>
-
-      <footer class="flex items-center justify-center bottom-0 h-13 bg-gray-800">
-        <p class="text-sm text-white font-sans tracking-wide select-none text-center justify-center items-center">
-          made using <a class="text-cyan-400">react.js</a> and{" "}
-          <a class="text-sky-600">tailwind</a>
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
